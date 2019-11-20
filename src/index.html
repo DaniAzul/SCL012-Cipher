@@ -3,13 +3,63 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Engagement&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Engagement|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href ="style.css">
+  
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+    <section class = container>
+      <!--Div para la primera pagina de presentación-->
+    <div class="firstPage" id="firstPage">
+      <h1 class="title1">Golocódigo</h1>
+    </header>
+      <h2 class = explanation>El código Cesar o cifrado por desplazamiento es una <br>
+        técnica sencilla de cifrado que podemos usar para <br>
+       generar pistas para juegos con nuestras niñas. <br>
+       Consiste en sustituir cada letra del texto original por <br>
+       la letra que se encuentra a determinado número de <br>
+       posiciones de la original.<br> <br>
+       </h2>
+        <button type="button" id="btn1" class="btn1">Cifrar</button>
+        <button type="button" id="btn2" class="btn2">Descifrar</button> 
+    </div> 
+        <!--Div para la segunda pagina (codificar) -->
+    <div class="secondPage" id="secondPage">
+      <h1 class="title2">Golocodificar</h1>
+      <form id="codeForm">
+        <input id= "offsetNumber" type="number" name="quantity">  Ingrese número de despazamiento</input><br>
+        <textarea id="textToTranslate" cols=40 rows=10 placeholder="Ingrese Texto"></textarea>
+        <button type="button" id="btn3" class="btn">Traducir</button><br>
+        <textarea id="translatedText" cols=45 rows=11 placeholder="Traducción acá"></textarea>
+        <!--<button onclick="myFunction()">Copiar</button> -->
+      </form><br><br>
+
+      <form>
+          <button type="button" id="btn4" class="btn">Volver</button>
+        <input type="reset" id="clearBtn1" class="btn"value="Limpiar" />
+      </form>
+
+<!-- Div para la tercera pagina (decodificar) -->
     </div>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+    <div class="thirdPage" id="thirdPage">
+        <h1 class="title3">Golodecodificar</h1>
+        <form id="decoForm">
+          <input type="number" id="offsetNumber2" min="1" max="27">  Ingrese número de despazamiento</form><br>
+          <textarea id="textToTranslate2" cols=40 rows=10 placeholder="Ingrese texto"></textarea>
+          <button type="button" id="btn5" class="btn">Traducir</button><br>
+          <textarea id="translatedText2" cols=40 rows=10 placeholder="Traducción acá"></textarea>
+         <!-- <button onclick="myFunction2()">Copiar</button> -->
+        </form><br><br>
+        <form>
+            <button type="button" id="btn6" class="btn">Volver</button>
+            <input type="button" id="clearBtn2" class= "btn" onclick="clearForm2()" value="Limpiar">
+        </form>
+  
+  
+      </div>
+  </section>
+    <script src= cipher.js></script>
+    <script src= index.js></script>
   </body>
 </html>

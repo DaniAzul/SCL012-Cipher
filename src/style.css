@@ -1,1 +1,89 @@
 /* Acá va tu código */
+
+body{
+  background-image: url("antuuu.jpg");
+  font-family: 'Engagement', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+#firstPage{
+  display:block;
+}
+#secondPage, #thirdPage {
+  display: none;
+}
+.btn {
+  background: #DEDB97;
+  border: 2px solid #DEDB97;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+}
+
+.btn1 {
+
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  left: 300px;
+  top: 500px;
+  
+  background: #DEDB97;
+  border: 2px solid #DEDB97;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn2{
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  left: 550px;
+  top: 500px;
+  
+  background: #DEDB97;
+  border: 2px solid #DEDB97;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.title1 {
+  position: absolute;
+  width: 400px;
+  height: 130px;
+  left: 400px;
+  top: 30px;
+  
+  font-family: Engagement;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+  line-height: 178px;
+  display: flex;
+  align-items: center;
+  
+  color: #999595;
+  
+}
+
+.explanation{
+  position: absolute;
+width: 940px;
+height: 294px;
+left: 250px;
+top: 200px;
+
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 42px;
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #999595;
+
+mix-blend-mode: luminosity;
+}
